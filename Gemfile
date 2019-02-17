@@ -44,12 +44,15 @@ gem 'jquery-rails'
 gem 'bcrypt'
 
 gem 'faker'
+# fakerと同時に入れられない模様
+#gem 'faker-okinawa'
 
 gem 'will_paginate'
 
 gem 'bootstrap-will_paginate'
 
 gem 'carrierwave'
+gem 'mini_magick'
 
 gem 'rails-controller-testing'
 
@@ -74,6 +77,7 @@ end
 
 group :production do
   gem 'pg'
+  gem 'fog'
 end
 
 group :test do
